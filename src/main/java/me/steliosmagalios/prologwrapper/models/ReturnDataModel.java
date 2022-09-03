@@ -5,6 +5,7 @@ import java.util.Collection;
 public class ReturnDataModel {
 
     private Collection<Task> tasks;
+    private boolean solutionFound;
 
     public ReturnDataModel() {
     }
@@ -17,10 +18,19 @@ public class ReturnDataModel {
         this.tasks = tasks;
     }
 
+    public boolean isSolutionFound() {
+        return solutionFound;
+    }
+
+    public void setSolutionFound(boolean solutionFound) {
+        this.solutionFound = solutionFound;
+    }
+
     @Override
     public String toString() {
         return "ReturnDataModel{" +
                 "tasks=" + tasks +
+                ", solutionFound=" + solutionFound +
                 '}';
     }
 }
