@@ -1,38 +1,38 @@
 package me.steliosmagalios.prologwrapper.models;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 public class Group {
 
-    private int id;
-    private int memberCount;
-    private int[] overlapping;
+    private Integer id;
+    private Integer memberCount;
+    private Collection<Integer> overlapping;
 
     public Group() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getMemberCount() {
+    public Integer getMemberCount() {
         return memberCount;
     }
 
-    public void setMemberCount(int memberCount) {
+    public void setMemberCount(Integer memberCount) {
         this.memberCount = memberCount;
     }
 
-
-    public int[] getOverlapping() {
+    public Collection<Integer> getOverlapping() {
         return overlapping;
     }
 
-    public void setOverlapping(int[] overlapping) {
+    public void setOverlapping(Collection<Integer> overlapping) {
         this.overlapping = overlapping;
     }
 
@@ -41,7 +41,7 @@ public class Group {
         return "Group{" +
                 "id=" + id +
                 ", memberCount=" + memberCount +
-                ", overlapping=" + Arrays.toString(overlapping) +
+                ", overlapping=" + overlapping +
                 '}';
     }
 }

@@ -1,28 +1,29 @@
 package me.steliosmagalios.prologwrapper.models;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 public class Professor {
 
-    private int id;
-    private int[] availability;
+    private Integer id;
+    private Collection<Integer> availability;
 
     public Professor() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int[] getAvailability() {
+    public Collection<Integer> getAvailability() {
         return availability;
     }
 
-    public void setAvailability(int[] availability) {
+    public void setAvailability(Collection<Integer> availability) {
         this.availability = availability;
     }
 
@@ -30,7 +31,7 @@ public class Professor {
     public String toString() {
         return "Professor{" +
                 "id=" + id +
-                ", availability=" + Arrays.toString(availability) +
+                ", availability=" + availability +
                 '}';
     }
 }

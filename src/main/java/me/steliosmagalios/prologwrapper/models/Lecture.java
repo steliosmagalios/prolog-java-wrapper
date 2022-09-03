@@ -1,30 +1,31 @@
 package me.steliosmagalios.prologwrapper.models;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 public class Lecture {
 
-    private int id;
-    private int duration;
+    private Integer id;
+    private Integer duration;
     private String roomType;
-    private int[] professors;
-    private int[] groups;
+    private Collection<Integer> professors;
+    private Collection<Integer> groups;
 
     public Lecture() {}
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 
@@ -36,19 +37,19 @@ public class Lecture {
         this.roomType = roomType;
     }
 
-    public int[] getProfessors() {
+    public Collection<Integer> getProfessors() {
         return professors;
     }
 
-    public void setProfessors(int[] professors) {
+    public void setProfessors(Collection<Integer> professors) {
         this.professors = professors;
     }
 
-    public int[] getGroups() {
+    public Collection<Integer> getGroups() {
         return groups;
     }
 
-    public void setGroups(int[] groups) {
+    public void setGroups(Collection<Integer> groups) {
         this.groups = groups;
     }
 
@@ -58,8 +59,8 @@ public class Lecture {
                 "id=" + id +
                 ", duration=" + duration +
                 ", roomType='" + roomType + '\'' +
-                ", professors=" + Arrays.toString(professors) +
-                ", groups=" + Arrays.toString(groups) +
+                ", professors=" + professors +
+                ", groups=" + groups +
                 '}';
     }
 }
