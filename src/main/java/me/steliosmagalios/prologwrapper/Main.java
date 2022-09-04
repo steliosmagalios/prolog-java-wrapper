@@ -82,7 +82,7 @@ public class Main {
         errorReturnModel.setError(error);
 
         // Send the error to the user
-        System.out.println(GSON.toJson(errorReturnModel));
+        System.err.println(GSON.toJson(errorReturnModel));
         System.exit(1);
     }
 
